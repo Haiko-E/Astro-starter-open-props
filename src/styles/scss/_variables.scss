@@ -1,0 +1,30 @@
+:root {
+  // responsive fonts
+  --font-step--2: clamp(0.6944rem, 0.6576rem + 0.1837vw, 0.8rem);
+  --font-step--1: clamp(0.8331rem, 0.7751rem + 0.2902vw, 1rem);
+  --font-step-0: clamp(1rem, 0.913rem + 0.4348vw, 1.25rem);
+  --font-step-1: clamp(1.2rem, 1.0739rem + 0.6304vw, 1.5625rem);
+  --font-step-2: clamp(1.44rem, 1.2615rem + 0.8924vw, 1.9531rem);
+  --font-step-3: clamp(1.7281rem, 1.4801rem + 1.2402vw, 2.4413rem);
+  --font-step-4: clamp(2.0738rem, 1.7335rem + 1.7011vw, 3.0519rem);
+  --font-step-5: clamp(2.4881rem, 2.0266rem + 2.3076vw, 3.815rem);
+
+  // responsive space
+  --space-3xs: clamp(0.25rem, 0.2283rem + 0.1087vw, 0.3125rem);
+  --space-2xs: clamp(0.5rem, 0.4565rem + 0.2174vw, 0.625rem);
+  --space-xs: clamp(0.75rem, 0.6848rem + 0.3261vw, 0.9375rem);
+  --space-s: clamp(1rem, 0.913rem + 0.4348vw, 1.25rem);
+  --space-m: clamp(1.5rem, 1.3696rem + 0.6522vw, 1.875rem);
+  --space-l: clamp(2rem, 1.8261rem + 0.8696vw, 2.5rem);
+  --space-xl: clamp(3rem, 2.7391rem + 1.3043vw, 3.75rem);
+  --space-2xl: clamp(4rem, 3.6522rem + 1.7391vw, 5rem);
+  --space-3xl: clamp(6rem, 5.4783rem + 2.6087vw, 7.5rem);
+
+  //extra layer to standard layer
+  --layer--1: -1;
+
+  // grid responsive
+  --grid-max-width: 77.5rem;
+  --grid-gutter: var(--space-s-l, clamp(1rem, 0.4783rem + 2.6087vw, 2.5rem));
+  --grid-columns: 12;
+}

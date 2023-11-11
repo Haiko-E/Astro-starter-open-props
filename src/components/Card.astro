@@ -1,0 +1,65 @@
+---
+interface Props {
+  title: string;
+  body: string;
+  href: string;
+}
+
+const { href, title, body } = Astro.props;
+---
+
+<li class='link-card'>
+  <a href={href}>
+    <h2>
+      {title}
+      <span>&rarr;</span>
+    </h2>
+    <p>
+      {body}
+    </p>
+  </a>
+</li>
+<style lang='scss'>
+  .link-card {
+    list-style: none;
+    display: flex;
+    padding: var(--size-3);
+    background-color: var(--surface-3);
+    background-image: none;
+    background-size: 400%;
+    border-radius: 7px;
+    background-position: 100%;
+    transition: background-position 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+    box-shadow: var(--shadow-1);
+
+    &:hover {
+      box-shadow: var(--shadow-3);
+    }
+  }
+  .link-card > a {
+    width: 100%;
+    text-decoration: none;
+    line-height: 1.4;
+    padding: calc(1.5rem - 1px);
+    border-radius: 8px;
+    color: white;
+    background-color: var(--surface-3);
+    opacity: 0.8;
+  }
+  h2 {
+    margin: 0;
+    font-size: var(--font-step-0);
+    transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  p {
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+  }
+  .link-card:is(:hover, :focus-within) {
+    background-position: 0;
+    background-image: var(--gradient-10);
+  }
+  .link-card:is(:hover, :focus-within) h2 {
+    color: var(--green-6);
+  }
+</style>
