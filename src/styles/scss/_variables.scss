@@ -1,13 +1,13 @@
 :root {
   // responsive fonts
-  --font-step--2: clamp(0.6944rem, 0.6576rem + 0.1837vw, 0.8rem);
-  --font-step--1: clamp(0.8331rem, 0.7751rem + 0.2902vw, 1rem);
-  --font-step-0: clamp(1rem, 0.913rem + 0.4348vw, 1.25rem);
-  --font-step-1: clamp(1.2rem, 1.0739rem + 0.6304vw, 1.5625rem);
-  --font-step-2: clamp(1.44rem, 1.2615rem + 0.8924vw, 1.9531rem);
-  --font-step-3: clamp(1.7281rem, 1.4801rem + 1.2402vw, 2.4413rem);
-  --font-step-4: clamp(2.0738rem, 1.7335rem + 1.7011vw, 3.0519rem);
-  --font-step-5: clamp(2.4881rem, 2.0266rem + 2.3076vw, 3.815rem);
+  --font-step--2: clamp(0.6075rem, 0.5962rem + 0.0565vw, 0.64rem);
+  --font-step--1: clamp(0.7294rem, 0.7048rem + 0.1228vw, 0.8rem);
+  --font-step-0: clamp(0.875rem, 0.8315rem + 0.2174vw, 1rem);
+  --font-step-1: clamp(1.05rem, 0.9804rem + 0.3478vw, 1.25rem);
+  --font-step-2: clamp(1.26rem, 1.1548rem + 0.5261vw, 1.5625rem);
+  --font-step-3: clamp(1.5119rem, 1.3584rem + 0.7674vw, 1.9531rem);
+  --font-step-4: clamp(1.8144rem, 1.5963rem + 1.0902vw, 2.4413rem);
+  --font-step-5: clamp(2.1775rem, 1.8734rem + 1.5207vw, 3.0519rem);
 
   // responsive space
   --space-3xs: clamp(0.25rem, 0.2283rem + 0.1087vw, 0.3125rem);

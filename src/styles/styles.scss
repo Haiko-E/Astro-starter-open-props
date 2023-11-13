@@ -1,5 +1,5 @@
-@forward 'scss';
-@forward 'open-props/style';
-@forward 'open-props/normalize';
-@forward 'open-props/buttons';
-@forward 'open-props/colors-hsl';
+@use 'scss';
+@use 'open-props/style';
+@use 'open-props/normalize';
+@use 'open-props/buttons';
+@use 'open-props/colors-hsl';
