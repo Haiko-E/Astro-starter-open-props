@@ -1,30 +1,62 @@
+// utopia.fyi settings
+
+//  width -- Font size -- Typescale  |  width   --   Font size -- Typescale
+//  348px      16px          1.2     |  1240px        20px          1.25 
+
 :root {
-  // responsive fonts
-  --font-step--2: clamp(0.6075rem, 0.5962rem + 0.0565vw, 0.64rem);
-  --font-step--1: clamp(0.7294rem, 0.7048rem + 0.1228vw, 0.8rem);
-  --font-step-0: clamp(0.875rem, 0.8315rem + 0.2174vw, 1rem);
-  --font-step-1: clamp(1.05rem, 0.9804rem + 0.3478vw, 1.25rem);
-  --font-step-2: clamp(1.26rem, 1.1548rem + 0.5261vw, 1.5625rem);
-  --font-step-3: clamp(1.5119rem, 1.3584rem + 0.7674vw, 1.9531rem);
-  --font-step-4: clamp(1.8144rem, 1.5963rem + 1.0902vw, 2.4413rem);
-  --font-step-5: clamp(2.1775rem, 1.8734rem + 1.5207vw, 3.0519rem);
+  /* container width's */
+  --w-1-12: 8.333333%;
+  --w-2-12: 16.666667%;
+  --w-3-12: 25%;
+  --w-4-12: 33.333333%;
+  --w-5-12: 41.666667%;
+  --w-6-12: 50%;
+  --w-7-12: 58.333333%;
+  --w-8-12: 66.666667%;
+  --w-9-12: 75%;
+  --w-10-12: 83.333333%;
+  --w-11-12: 91.666667%;
+  --w-full: 100%;
 
-  // responsive space
-  --space-3xs: clamp(0.25rem, 0.2283rem + 0.1087vw, 0.3125rem);
-  --space-2xs: clamp(0.5rem, 0.4565rem + 0.2174vw, 0.625rem);
-  --space-xs: clamp(0.75rem, 0.6848rem + 0.3261vw, 0.9375rem);
-  --space-s: clamp(1rem, 0.913rem + 0.4348vw, 1.25rem);
-  --space-m: clamp(1.5rem, 1.3696rem + 0.6522vw, 1.875rem);
-  --space-l: clamp(2rem, 1.8261rem + 0.8696vw, 2.5rem);
-  --space-xl: clamp(3rem, 2.7391rem + 1.3043vw, 3.75rem);
-  --space-2xl: clamp(4rem, 3.6522rem + 1.7391vw, 5rem);
-  --space-3xl: clamp(6rem, 5.4783rem + 2.6087vw, 7.5rem);
+  /* responsive fonts */
+  --step--2: clamp(0.6944rem, 0.6564rem + 0.1853vw, 0.8rem);
+  --step--1: clamp(0.8331rem, 0.7731rem + 0.2928vw, 1rem);
+  --step-0: clamp(1rem, 0.9101rem + 0.4386vw, 1.25rem);
+  --step-1: clamp(1.2rem, 1.0696rem + 0.636vw, 1.5625rem);
+  --step-2: clamp(1.44rem, 1.2555rem + 0.9002vw, 1.9531rem);
+  --step-3: clamp(1.7281rem, 1.4717rem + 1.2511vw, 2.4413rem);
+  --step-4: clamp(2.0738rem, 1.722rem + 1.716vw, 3.0519rem);
+  --step-5: clamp(2.4881rem, 2.0109rem + 2.3279vw, 3.815rem);
 
-  //extra layer to standard layer
+  /* responsive space */
+  --space-3xs: clamp(0.25rem, 0.2275rem + 0.1096vw, 0.3125rem);
+  --space-2xs: clamp(0.5rem, 0.455rem + 0.2193vw, 0.625rem);
+  --space-xs: clamp(0.75rem, 0.6826rem + 0.3289vw, 0.9375rem);
+  --space-s: clamp(1rem, 0.9101rem + 0.4386vw, 1.25rem);
+  --space-m: clamp(1.5rem, 1.3651rem + 0.6579vw, 1.875rem);
+  --space-l: clamp(2rem, 1.8202rem + 0.8772vw, 2.5rem);
+  --space-xl: clamp(3rem, 2.7303rem + 1.3158vw, 3.75rem);
+  --space-2xl: clamp(4rem, 3.6404rem + 1.7544vw, 5rem);
+  --space-3xl: clamp(6rem, 5.4605rem + 2.6316vw, 7.5rem)
+
+  /* One-up pairs */
+  --space-3xs-2xs: clamp(0.25rem, 0.1151rem + 0.6579vw, 0.625rem);
+  --space-2xs-xs: clamp(0.5rem, 0.3427rem + 0.7675vw, 0.9375rem);
+  --space-xs-s: clamp(0.75rem, 0.5702rem + 0.8772vw, 1.25rem);
+  --space-s-m: clamp(1rem, 0.6853rem + 1.5351vw, 1.875rem);
+  --space-m-l: clamp(1.5rem, 1.1404rem + 1.7544vw, 2.5rem);
+  --space-l-xl: clamp(2rem, 1.3706rem + 3.0702vw, 3.75rem);
+  --space-xl-2xl: clamp(3rem, 2.2807rem + 3.5088vw, 5rem);
+  --space-2xl-3xl: clamp(4rem, 2.7412rem + 6.1404vw, 7.5rem);
+
+  /* Custom pairs */
+  --space-s-l: clamp(1rem, 0.4605rem + 2.6316vw, 2.5rem);
+
+  /* extra layer to standard layer */
   --layer--1: -1;
 
-  // grid responsive
-  --grid-max-width: 77.5rem;
-  --grid-gutter: var(--space-s-l, clamp(1rem, 0.4783rem + 2.6087vw, 2.5rem));
+  /* grid responsive */
+  --grid-max-width: 77.50rem;
+  --grid-gutter: var(--space-s-l, clamp(1rem, 0.4605rem + 2.6316vw, 2.5rem));
   --grid-columns: 12;
 }

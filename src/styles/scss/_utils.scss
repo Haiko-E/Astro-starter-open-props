@@ -13,5 +13,43 @@
 
 .u-grid {
   display: grid;
+  // grid-template-columns: repeat(var(--grid-columns), 1fr);
   gap: var(--grid-gutter);
 }
+
+// .w-1\/12 {
+//   width: var(--w-1-12);
+// }
+// .w-2\/12 {
+//   width: var(--w-2-12);
+// }
+// .w-3\/12 {
+//   width: var(--w-3-12);
+// }
+// .w-4\/12 {
+//   width: var(--w-4-12);
+// }
+// .w-5\/12 {
+//   width: var(--w-5-12);
+// }
+// .w-6\/12 {
+//   width: var(--w-6-12);
+// }
+// .w-7\/12 {
+//   width: var(--w-7-12);
+// }
+// .w-8\/12 {
+//   width: var(--w-8-12);
+// }
+// .w-9\/12 {
+//   width: var(--w-9-12);
+// }
+// .w-10\/12 {
+//   width: var(--w-10-12);
+// }
+// .w-11\/12 {
+//   width: var(--w-11-12);
+// }
+// .w-full {
+//   width: var(--w-full);
+// }
